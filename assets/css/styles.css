@@ -138,7 +138,6 @@ body.light-theme {
 .light-theme .button:hover,
 .light-theme .active-work,
 .light-theme .footer__title,
-.light-theme .footer__link,
 .light-theme .footer__copy {
   color: var(--title-color);
 }
@@ -690,14 +689,12 @@ body.light-theme {
   background-color: var(--first-color);
 }
 
-.footer__container {
-  padding: 2rem 0 6rem;
+.footer__container{
+  padding-block: 48px 32px;
+  row-gap: 40px;
 }
 
 .footer__title,
-.footer__link {
-  color: var(--body-color);
-}
 
 .footer__title {
   text-align: center;
@@ -711,26 +708,10 @@ body.light-theme {
   margin-bottom: 2rem;
 }
 
-.footer__social {
-  display: flex;
-  justify-content: center;
-  column-gap: 1.25rem;
-}
-.footer__social-link {
-  background-color: var(--body-color);
-  color: var(--first-color);
-  padding: 0.25rem;
-  border-radius: 0.25rem;
-  font-size: 1rem;
-  display: inline-flex;
-}
-
-.footer__copy {
-  display: block;
-  margin-top: 4.5rem;
-  color: var(--container-color);
+.footer__copy{
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
   text-align: center;
-  font-size: var(--smaller-font-size);
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -981,11 +962,6 @@ body.light-theme {
   }
   .contact__container {
     column-gap: 6rem;
-  }
-  .footer__social-link {
-    font-size: 1.25rem;
-    padding: 0.4rem;
-    border-radius: 0.5rem;
   }
   .bd-grid {
     margin-left: auto;
