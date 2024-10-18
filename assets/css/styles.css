@@ -459,7 +459,7 @@ body.light-theme {
 }
 .about__description {
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 2 auto;
 }
 /*=============== SKILLS ===============*/
 .skills__container {
@@ -931,7 +931,7 @@ body.light-theme {
     width: 350px;
   }
   .about__data {
-    text-align: initial;
+    text-align: center;
   }
   .about__info {
     justify-content: initial;
@@ -939,9 +939,6 @@ body.light-theme {
   .about__box {
     text-align: center;
     padding: 1rem 1.25rem;
-  }
-  .about__description {
-    margin-bottom: 2.5rem;
   }
   .skills__container {
     grid-template-columns: repeat(2, 350px);
