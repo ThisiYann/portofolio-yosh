@@ -709,7 +709,7 @@ body.light-theme {
 }
 
 .footer__copy{
-  color: var(--text-color-light);
+  color: var(--first-color);
   font-size: var(--small-font-size);
   text-align: center;
 }
