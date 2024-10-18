@@ -800,9 +800,6 @@ body.light-theme {
     grid-template-columns: repeat(3, 140px);
     justify-content: center;
   }
-  .about__description {
-    padding: 0 5rem;
-  }
   .skills__container {
     justify-content: center;
   }
@@ -944,8 +941,7 @@ body.light-theme {
     padding: 1rem 1.25rem;
   }
   .about__description {
-    padding: 0 4rem 0 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   .skills__container {
     grid-template-columns: repeat(2, 350px);
