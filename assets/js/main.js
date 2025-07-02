@@ -10,9 +10,13 @@ function scrollActive() {
       sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.add("active-link");
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
     } else {
-      document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.remove("active-link");
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
     }
   });
 }
@@ -55,14 +59,20 @@ const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
 //obtain current theme that has interface by validating light theme class in html
-const getCurrentTheme = () => (document.body.classList.contains(lightTheme) ? "dark" : "light");
-const getCurrentIcon = () => (document.body.classList.contains(iconTheme) ? "bx bx-moon" : "bx bx-sun");
+const getCurrentTheme = () =>
+  document.body.classList.contains(lightTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  document.body.classList.contains(iconTheme) ? "bx bx-moon" : "bx bx-sun";
 
 //validate if user change theme light or dark theme
 if (selectedTheme) {
   //if fullfilled, change theme mode
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](lightTheme);
-  themeButton.classList[selectedIcon === "bx bx-moon" ? "add" : "remove"](iconTheme);
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    lightTheme,
+  );
+  themeButton.classList[selectedIcon === "bx bx-moon" ? "add" : "remove"](
+    iconTheme,
+  );
 }
 
 //activate or deactivate manually with theme button
