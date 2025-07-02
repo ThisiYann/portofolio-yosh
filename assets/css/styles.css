@@ -309,6 +309,27 @@ body.light-theme {
     border-radius: 1.25rem 1.25rem 0 0;
     transition: var(--transition);
     backdrop-filter: blur(10px);
+    z-index: var(--z-fixed);
+  }
+
+  /* Add padding bottom to body to prevent content overlap */
+  body {
+    padding-bottom: 5rem;
+  }
+
+  /* Ensure main content doesn't get covered */
+  .main {
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust section padding for mobile */
+  .section {
+    padding: 4rem 0 2rem;
+  }
+
+  /* Specific adjustment for last section */
+  .contact.section {
+    padding-bottom: 6rem;
   }
 }
 
@@ -1414,5 +1435,55 @@ body.light-theme {
 
   .skills__container {
     max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .home__container {
+    column-gap: 8rem;
+  }
+
+  .home__name {
+    font-size: 4.5rem;
+  }
+
+  .section__title {
+    font-size: 3rem;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    max-width: 1200px;
+  }
+
+  .skills__container {
+    max-width: 1200px;
+  }
+}
+
+/* Mobile navigation adjustments */
+@media screen and (max-width: 767px) {
+  /* Ensure footer has enough space */
+  .footer {
+    margin-bottom: 5rem;
+  }
+
+  /* Add safe area for navigation */
+  .home__container,
+  .about__container,
+  .skills__container,
+  .work__container,
+  .contact__container {
+    margin-bottom: 2rem;
+  }
+
+  /* Adjust scroll behavior for mobile */
+  html {
+    scroll-padding-bottom: 5rem;
   }
 }
