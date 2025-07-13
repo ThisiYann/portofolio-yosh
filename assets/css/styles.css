@@ -314,7 +314,7 @@ body.light-theme {
 
   /* Add padding bottom to body to prevent content overlap */
   body {
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
   }
 
   /* Ensure main content doesn't get covered */
@@ -329,7 +329,7 @@ body.light-theme {
 
   /* Specific adjustment for last section */
   .contact.section {
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -1466,13 +1466,51 @@ body.light-theme {
   }
 }
 
-/* Mobile navigation adjustments */
 @media screen and (max-width: 767px) {
-  /* Ensure footer has enough space */
-  .footer {
-    margin-bottom: 5rem;
+  .home__container {
+    grid-template-areas:
+      "content"
+      "handle"
+      "social"
+      "scroll";
+    row-gap: 1.5rem; /* Mengurangi ruang antar elemen */
+    padding-top: 1rem;
   }
 
+  .home__handle {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .home__img-wrapper {
+    height: auto;
+    aspect-ratio: 3/4; /* Mempertahankan rasio aspek */
+    padding-bottom: 0;
+  }
+
+  .home__img {
+    width: 70%;
+    height: auto;
+    max-width: 200px;
+  }
+
+  .home__content {
+    padding-top: 1rem;
+  }
+
+  .home__name {
+    font-size: 2.5rem;
+  }
+
+  .home__profession {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile navigation adjustments */
+@media screen and (max-width: 767px) {
   /* Add safe area for navigation */
   .home__container,
   .about__container,
