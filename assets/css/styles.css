@@ -314,12 +314,14 @@ body.light-theme {
 
   /* Add padding bottom to body to prevent content overlap */
   body {
-    padding-bottom: 6rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Ensure main content doesn't get covered */
   .main {
-    margin-bottom: 1rem;
+    flex-grow: 1;
   }
 
   /* Adjust section padding for mobile */
@@ -953,7 +955,7 @@ body.light-theme {
 }
 
 .footer__container {
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .footer__content {
@@ -1491,9 +1493,8 @@ body.light-theme {
   }
 
   .home__img {
-    width: 70%;
-    height: auto;
-    max-width: 200px;
+    width: 600px;
+    height: 350px;
   }
 
   .home__content {
@@ -1523,75 +1524,5 @@ body.light-theme {
   /* Adjust scroll behavior for mobile */
   html {
     scroll-padding-bottom: 5rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  
-  /* 1. Membuat gambar utama lebih fleksibel */
-  .home__handle {
-    width: 90%; /* Mengganti dari 300px menjadi persentase */
-    max-width: 280px; /* Batas atas agar tidak terlalu besar */
-    height: auto; /* Biarkan tinggi menyesuaikan */
-    aspect-ratio: 3 / 4; /* Menjaga rasio agar tidak gepeng */
-  }
-
-  .home__img {
-    width: 75%; /* Membuat gambar di dalamnya juga fleksibel */
-    max-width: 200px;
-  }
-
-  /* 2. Menyesuaikan ukuran font judul agar tidak terlalu besar */
-  .home__name {
-    font-size: 2.5rem; /* Sedikit lebih kecil dari 2.75rem */
-  }
-
-  .home__profession {
-    font-size: 1.25rem;
-  }
-
-  /* 3. Membuat kartu proyek lebih fleksibel di layar sempit */
-  .work__container {
-    /* Mengizinkan kartu untuk menjadi lebih kecil dari 350px */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-
-  /* 4. Memastikan padding bawah body cukup untuk navigasi */
-  body {
-    /* 4rem (tinggi nav) + 2rem (jarak aman) = 6rem */
-    padding-bottom: 6rem;
-  }
-
-  /* 5. Mengembalikan padding section terakhir ke normal */
-  .contact.section {
-    padding-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-
-  /* 1. Menumpuk ikon dan teks di kartu kontak agar tidak sempit */
-  .contact__card {
-    flex-direction: column; /* Mengubah dari baris menjadi kolom */
-    align-items: center;   /* Pusatkan konten */
-    text-align: center;    /* Pusatkan teks */
-  }
-
-  /* 2. Menyesuaikan ukuran ikon kontak */
-  .contact__card-icon {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 1.25rem;
-  }
-
-  /* 3. Membuat tombol lebih mudah di-tap */
-  .home__buttons .button {
-    width: 100%;
-    justify-content: center;
-  }
-
-  /* 4. Memaksa info "About Me" menjadi 1 kolom */
-   .about__info {
-    grid-template-columns: 1fr;
   }
 }
