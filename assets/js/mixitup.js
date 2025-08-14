@@ -730,7 +730,7 @@
         event = doc.createEvent("CustomEvent");
         event.initCustomEvent(eventType, true, true, detail);
       } else {
-        (event = doc.createEventObject()), (event.type = eventType);
+        ((event = doc.createEventObject()), (event.type = eventType));
 
         event.returnValue = false;
         event.cancelBubble = false;
@@ -1049,8 +1049,8 @@
       var distanceX = node1.x - node2.x,
         distanceY = node1.y - node2.y;
 
-      (distanceX = distanceX < 0 ? distanceX * -1 : distanceX),
-        (distanceY = distanceY < 0 ? distanceY * -1 : distanceY);
+      ((distanceX = distanceX < 0 ? distanceX * -1 : distanceX),
+        (distanceY = distanceY < 0 ? distanceY * -1 : distanceY));
 
       return Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
     },
